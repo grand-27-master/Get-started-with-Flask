@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>List of my favourite fruits</h1>
+    <h2>
+    {% for f in my_fruits %}
+    {{f}}
+    {% endfor %}
+
+    <form action="/submit" method="post" enctype="multipart/form-data">
+      <input type="text" name="username" placeholder="Enter your name">
+      <input type="submit"><br><br><br>
+      <input type="file" name="userfile">
+      <input type="submit">
+    </form>
+    </h2>
+  </body>
+</html>
